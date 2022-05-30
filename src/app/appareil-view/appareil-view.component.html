@@ -1,0 +1,27 @@
+
+
+<div class="containerAppViews">
+
+  <div class="col-xs-12">
+    <h2> Mes Appareil First</h2>
+    <p> Dérnière mise à jours : {{lastUpdate | async | date :'short' }} </p>
+    <ul class="list-group">
+      <app-first *ngFor="let Appareil of appareils; let i = index"
+      [indexOfAppareil] = "i"
+      [AppareilName] = "Appareil.name"
+      [AppareilStatus] ="Appareil.statut" 
+      [id]="Appareil.id"> </app-first>
+    </ul>
+    <button class="btn btn-success"  (click)="OnAllumer()"> All At Time</button>
+    <button class="btn btn-danger"  (click)="OnEteindre()">  All Canceled</button>
+    <button class="btn btn-success" (click)="OnSave()"> Save</button>
+    <button class="btn btn-primary" (click)="onFetch()"> Download </button>
+  
+  </div>
+
+
+</div>
+
+
+
+

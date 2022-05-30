@@ -1,0 +1,36 @@
+.navbar navbar-default{
+   background-color: blue;
+   margin-left: auto;
+   margin-right: auto;
+   
+
+ 
+}
+
+.container-fluid {
+    flex: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#containerId {
+   
+    padding-left: 5cm;
+    padding-right: 5cm;
+    margin-top: 1cm;
+
+    
+
+}
+
+
+.imgmm{
+    width: 2.5cm ;
+    height: 2cm;
+}
+
+li {
+    width: 4cm;
+    padding: 4px;
+}

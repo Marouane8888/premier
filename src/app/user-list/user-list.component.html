@@ -1,0 +1,15 @@
+<a routerLink="/new-user" class="nuser"> Nouvelle Utilisateur  </a>
+
+<div class="containerListUser"> 
+
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of users" style="background-color: white; width: 20cm;" > 
+        <h3>{{user.firstName}} {{user.lastName}} </h3>    
+        <p> E-mail: {{user.email}}</p>
+        <p> Votre Commentaire  : {{user.drinkPreference}}</p>
+     
+    </li>
+</ul>
+
+</div>

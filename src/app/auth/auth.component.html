@@ -1,0 +1,15 @@
+<div class="containerAuth">
+    <h2 *ngIf="!AuthStatus"> Autentification </h2>
+
+    <h4 *ngIf="!AuthStatus"  > Merci de vous authentifier afin d'acceder à l'application </h4>
+    <h4 *ngIf="AuthStatus"  > Etes vous sur de vouloir quitter l'application ?</h4>
+
+    <button class="btn btn-success" *ngIf="!AuthStatus"  (click)= "onSignIn()"> Se Connecter </button>
+    <button class="btn btn-danger" *ngIf="AuthStatus"  (click)= "onSignOut()"> Se Déconnecter </button>
+    
+
+  
+
+</div>
+
+

@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="containerId">
+  <div class="container-fluid"> 
+    <ul class="nav nav-tabs">
+     <li>    <img   class="imgmm"  src="../assets/logo2.png" style="border-radius:  45%;"  /> </li>  
+      <li routerLinkActive ="active"  > <a routerLink="auth" class="btn btn-primary"> Authentication </a> </li>
+      <li routerLinkActive ="active" > <a routerLink="appareils" class="btn btn-primary"> Flight Manager  </a> </li>
+      <li > <a routerLink="edit" class="btn btn-primary" > Add a flight </a> </li>
+      <li > <a routerLink="users" class="btn btn-primary">  Leave a comment </a> </li>
+    </ul> 
+ 
+  </div>
+
+</nav>
+
+<div class="container">
+  <div class="row">
+
+    <router-outlet>  </router-outlet>
+
+  </div>
+</div>
+

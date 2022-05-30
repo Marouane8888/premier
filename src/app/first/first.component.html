@@ -1,0 +1,20 @@
+<li class="list-group-item">
+
+
+
+ <h4 [ngStyle]="{color: getColor()}">  {{AppareilName}} ------   {{AppareilStatus}}  </h4> 
+ <a [routerLink]="[id]" > Détail         </a> 
+ <button class="btn btn-success" 
+ (click)='OnSwitchOne()' 
+ [disabled]="AppareilStatus === 'At time'" > At time </button>
+ 
+
+ <button class="btn btn-danger" 
+ (click)='OnSwitchOff()' 
+ [disabled]="AppareilStatus === 'Cancel'" > Cancel </button>
+ 
+
+</li>
+
+
+
